@@ -120,15 +120,16 @@
         </section>
 
         <section id="projects" class="panel" role="tabpanel" aria-labelledby="tab-projects" inert>
-          <!-- Each card links to its own page (projects/<name>.html, still to be made).
+          <!-- Each card links to its own page (projects/<name>.html, still to be made) through the
+               full-card .project-link overlay, so other links (e.g. an image .credit) can sit on top of it.
                Swap the cover src for a project image and drop the "placeholder" class.
                Tags (shown on hover): add text tags as <li>ROS</li> in .project-tags, logo tags as <li class="tag-logo"><img …></li>. -->
           <div class="project-grid">
-            <a class="project" href="projects/project-one.html">
+            <article class="project">
               <img class="project-cover" src="project_covers/antenna.JPG" alt="Robotic arm used for antenna measurements" draggable="false">
               <div class="project-banner">
                 <div class="project-head">
-                  <h3>Automated Antenna Radiation Measurements</h3>
+                  <h3 id="project-one-title">Automated Antenna Radiation Measurements</h3>
                   <time>2025</time>
                 </div>
                 <ul class="project-tags">
@@ -146,12 +147,13 @@
                   <li>Quantified phase offset due to individual robotic arm joints: max 20°</li>
                 </ul>
               </div>
-            </a>
-            <a class="project" href="projects/project-two.html">
+              <a class="project-link" href="projects/project-one.html" aria-labelledby="project-one-title"></a>
+            </article>
+            <article class="project">
               <img class="project-cover" src="project_covers/mirte_master.png" alt="Mirte Master robot" draggable="false">
               <div class="project-banner">
                 <div class="project-head">
-                  <h3>Autonomous handling and navigation</h3>
+                  <h3 id="project-two-title">Autonomous handling and navigation</h3>
                   <time>2023-2025</time>
                 </div>
                 <ul class="project-tags">
@@ -169,24 +171,30 @@
                   to facilitate close-range positioning, achieving ±2 cm accuracy</li>
                 </ul>
               </div>
-            </a>
-            <a class="project" href="projects/project-three.html">
-              <img class="project-cover placeholder" src="logos/tu-delft-flame.svg" alt="" draggable="false">
+              <a class="project-link" href="projects/project-two.html" aria-labelledby="project-two-title"></a>
+              <a class="credit" href="https://mirte.org/en/robots/master" target="_blank" rel="noopener noreferrer">Image: MIRTE</a>
+            </article>
+            <article class="project">
+              <img class="project-cover" src="project_covers/Manta.jpg" alt="" draggable="false">
               <div class="project-banner">
                 <div class="project-head">
-                  <h3>Project Three</h3>
+                  <h3 id="project-three-title">Underwater inspection robot</h3>
                   <time>2025</time>
                 </div>
                 <ul class="project-tags">
-                  <li class="tag-logo"><img src="logos/tu-delft.svg" alt="TU Delft" draggable="false"></li>
+                  <!--<li class="tag-logo"><img src="logos/tu-delft.svg" alt="TU Delft" draggable="false"></li>-->
+                  <li>TU Delft</li>
+                  <li>Robotics Minor Programme</li>
                 </ul>
                 <ul class="project-details">
-                  <li>What it does and why you built it.</li>
-                  <li>Tools and technologies used.</li>
-                  <li>Your role and the result.</li>
+                  <li>Designed and built a proof of concept underwater robot for use in inspection of offshore infrastructure</li>
+                  <!--<li></li>-->
+                  <li>Engineered the power distribution system, sensory systems and electromegnet control systems on a custom PCB</li>
+                  <li>Incorporated fail-safe sensors and safety mechanisms to minimise water damage</li>
                 </ul>
               </div>
-            </a>
+              <a class="project-link" href="projects/project-three.html" aria-labelledby="project-three-title"></a>
+            </article>
           </div>
         </section>
       </div>

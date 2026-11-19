@@ -137,13 +137,13 @@ main h3 { margin: 0; font-size: 19px; color: var(--navy); }
 /* Card: cover image with a translucent white banner (title + date) along the bottom.
    On hover the banner slides up to cover the whole card and the bullet points fade in. */
 .project { --banner-h: 76px; position: relative; display: block; aspect-ratio: 4 / 3; overflow: hidden; background: var(--cream); border: 1px solid var(--cream-dark); border-radius: 10px; transition: border-color .2s; }
-.project:hover, .project:focus-visible { border-color: var(--blue); }
-.project:focus-visible { outline: 2px solid var(--blue); outline-offset: 3px; }
+.project:hover, .project:has(> .project-link:focus-visible) { border-color: var(--blue); }
+.project:has(> .project-link:focus-visible) { outline: 2px solid var(--blue); outline-offset: 3px; }
 .project-cover { display: block; width: 100%; height: 100%; object-fit: cover; }
 /* Logo placeholder: shown whole and centred in the space above the banner */
 .project-cover.placeholder { object-fit: contain; padding: 20px 20px calc(var(--banner-h) + 20px); }
 .project-banner { position: absolute; inset: 0; background: var(--banner); backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); transform: translateY(calc(100% - var(--banner-h))); transition: transform var(--slide), background-color .3s; }
-.project:hover .project-banner, .project:focus-visible .project-banner { transform: none; background: var(--banner-open); }
+.project:hover .project-banner, .project:has(> .project-link:focus-visible) .project-banner { transform: none; background: var(--banner-open); }
 .project-head { height: var(--banner-h); display: flex; flex-direction: column; justify-content: center; padding: 0 20px; }
 .project-head h3 { overflow: hidden; white-space: nowrap; text-overflow: ellipsis; line-height: 1.3; }
 .project-head time { font-size: 13px; color: var(--muted); letter-spacing: .03em; }
@@ -155,8 +155,13 @@ main h3 { margin: 0; font-size: 19px; color: var(--navy); }
 .project-tags li { display: inline-flex; align-items: center; }
 .project-tags li::before { content: "·"; width: 18px; margin-left: -18px; text-align: center; }
 .project-tags img { display: block; height: 16px; width: auto; }
-.project:hover .project-details, .project:focus-visible .project-details,
-.project:hover .project-tags, .project:focus-visible .project-tags { opacity: 1; transition: opacity .3s .15s; }
+.project:hover .project-details, .project:has(> .project-link:focus-visible) .project-details,
+.project:hover .project-tags, .project:has(> .project-link:focus-visible) .project-tags { opacity: 1; transition: opacity .3s .15s; }
+/* The card's link is an empty overlay covering the whole card (links can't nest, so this lets other links sit above it) */
+.project-link { position: absolute; inset: 0; z-index: 1; }
+/* Image credit: small frosted label in the cover's top-right corner, above the card link */
+.credit { position: absolute; top: 8px; right: 8px; z-index: 2; padding: 2px 7px; border-radius: 5px; font-size: 11px; line-height: 1.4; color: var(--muted); background: var(--banner); backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); }
+.credit:hover, .credit:focus-visible { color: var(--blue); text-decoration: underline; text-underline-offset: 2px; }
 .entry, .project { scroll-margin-top: 90px; }
 
 @media (max-width: 1200px) {
