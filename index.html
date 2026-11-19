@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tom Rietjens | Profile</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=7">
+  <!-- Apply the saved (or system) theme before anything paints, so there's no flash -->
+  <script>
+    try { document.documentElement.dataset.theme = localStorage.getItem('theme') || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'); } catch (e) {}
+  </script>
+</head>
+<body>
+  <aside class="sidebar">
+    <button class="theme-toggle" type="button" role="switch" aria-checked="false" aria-label="Dark mode">
+      <span class="knob" aria-hidden="true">
+        <svg class="sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        <svg class="moon" viewBox="0 0 24 24"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+      </span>
+    </button>
+    <img class="avatar" src="logos/professional_foto.png" alt="Tom Rietjens">
+    <h1>Tom Rietjens</h1>
+    <p class="role">MSc Human and Biological Robotics</p>
+    <p class="languages">
+      <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9.5"/><path d="M2.5 12h19M12 2.5c2.6 2.6 3.9 5.8 3.9 9.5s-1.3 6.9-3.9 9.5c-2.6-2.6-3.9-5.8-3.9-9.5s1.3-6.9 3.9-9.5z"/></svg>
+      <abbr title="Dutch">NL</abbr><span aria-hidden="true">·</span><abbr title="English">EN</abbr>
+    </p>
+
+    <div class="block">
+      <h2>About</h2>
+      <p class="bio">Ambitious and highly social student pursuing a career in clinical robotics.</p>
+      <div class="skills">
+        <span>Neuroscience</span><span>Prosthetics</span><span>Brain–Machine Interfaces</span>
+      </div>
+    </div>
+
+    <div class="block">
+      <h2>Education</h2>
+      <ol class="edu-timeline">
+        <li class="current">
+          <a class="node" href="https://www.imperial.ac.uk/" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><img src="logos/imperial-i.png" alt="Imperial College London logo"></a>
+          <time>2026 – Present</time>
+          <h3>MSc Human and Biological Robotics</h3>
+          <p class="org"><a href="https://www.imperial.ac.uk/" target="_blank" rel="noopener noreferrer">Imperial College London</a></p>
+          <p></p>
+        </li>
+        <li>
+          <a class="node" href="https://www.tudelft.nl/en/" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><img src="logos/tu-delft-flame.svg" alt="TU Delft logo"></a>
+          <time>2022 – 2025</time>
+          <h3>BSc Electrical Engineering</h3>
+          <p class="org"><a href="https://www.tudelft.nl/en/" target="_blank" rel="noopener noreferrer">Delft University of Technology</a></p>
+          <p>
+              GPA 8.01 / 10 <br>
+              Robotics Honours Programme
+          </p>
+        </li>
+        <li>
+          <a class="node crest" href="https://www.dubaicollege.org/" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true"><img src="logos/dubai-college.svg" alt="Dubai College logo"></a>
+          <time>2015 – 2022</time>
+          <h3>A Levels</h3>
+          <p class="org"><a href="https://www.dubaicollege.org/" target="_blank" rel="noopener noreferrer">Dubai College</a></p>
+          <p>A* in all four subjects</p>
+        </li>
+      </ol>
+    </div>
+
+    <div class="block contact">
+      <h2>Contact</h2>
+      <p class="location">London, United Kingdom</p>
+      <div class="contact-links">
+        <a class="contact-box" href="https://linkedin.com/in/tomrietjens" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
+          <span>LinkedIn</span>
+        </a>
+
+        <a class="contact-box" href="https://github.com/TomRiej" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .3a12 12 0 0 0-3.8 23.38c.6.12.82-.26.82-.57v-2.04c-3.34.73-4.04-1.6-4.04-1.6-.55-1.4-1.34-1.77-1.34-1.77-1.08-.74.09-.73.09-.73 1.2.09 1.83 1.24 1.83 1.24 1.07 1.83 2.8 1.3 3.49 1 .1-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.11-3.18 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.25 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.61-2.8 5.62-5.48 5.92.43.37.82 1.1.82 2.22v3.29c0 .32.21.69.83.57A12 12 0 0 0 12 .3z"/></svg>
+          <span>GitHub</span>
+        </a>
+      </div>
+    </div>
+  </aside>
+
+  <main>
+    <!-- Section tabs, which double as the section titles. Click them, use the arrow keys,
+         or swipe the content on a touch screen to slide between the panels. -->
+    <div class="topnav" role="tablist" aria-label="Sections">
+      <a href="#experience" id="tab-experience" role="tab" aria-controls="experience" aria-selected="true" class="active">Experience</a>
+      <a href="#projects" id="tab-projects" role="tab" aria-controls="projects" aria-selected="false" tabindex="-1">Projects</a>
+      <span class="tab-indicator" aria-hidden="true"></span>
+    </div>
+
+    <div class="slider">
+      <div class="slider-track">
+        <section id="experience" class="panel" role="tabpanel" aria-labelledby="tab-experience">
+          <div class="entry">
+            <div class="when">2025<span class="duration">1 YEAR</span><div class="location">Delft, Netherlands</div></div>
+            <div>
+              <h3>Treasurer of the executive board</h3>
+              <p class="org"><a href="https://www.virgiel.nl/" target="_blank" rel="noopener noreferrer">K.S.V. Sanctus Virgilius</a></p>
+              <ul><li>Fulltime function as one of the ten board members of the largest student association in Delft.</li>
+                  <li>Oversaw around 2000 members and dealt with over 40 committees.</li>
+                  <li>Operated bar and restaurant with an annual turnover of €2 million.</li>
+                  <li>Managed ten employees.</li>
+                  <li>Responsible for the financial policy, monitoring cash flows, budget distribution and the annual accounts.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="entry">
+            <div class="when">Jul 2021<span class="duration">1 month</span><div class="location">Dubai, UAE</div></div>
+            <div>
+              <h3>Intern - systems enhancement and innovation</h3>
+              <p class="org"><a href="https://www.dpworld.com/" target="_blank" rel="noopener noreferrer">DP World</a></p>
+              <ul><li>Interned at the Systems enhancement & Innovations department at DP World.</li>
+                  <li>Through shadowing an employee, I was able to attend meetings, visit workshops, test prototypes as well as do research into commonly used robotic systems and hardware.</li>
+                  <li>Towards the end I produced a comprehensive research report and was able to ask relevant questions and pitch appropriate ideas.</li></ul>
+            </div>
+          </div>
+        </section>
+
+        <section id="projects" class="panel" role="tabpanel" aria-labelledby="tab-projects" inert>
+          <!-- Each card links to its own page (projects/<name>.html, still to be made).
+               Swap the cover src for a project image and drop the "placeholder" class. -->
+          <div class="project-grid">
+            <a class="project" href="projects/project-one.html">
+              <img class="project-cover" src="project_covers/repeatability_normal.JPG" alt="" draggable="false">
+              <div class="project-banner">
+                <div class="project-head">
+                  <h3>Automated Antenna Radiation Measurements</h3>
+                  <time>2025</time>
+                </div>
+                <ul class="project-details">
+                  <li>What it does and why you built it.</li>
+                  <li>Tools and technologies used.</li>
+                  <li>Your role and the result.</li>
+                </ul>
+              </div>
+            </a>
+            <a class="project" href="projects/project-two.html">
+              <img class="project-cover placeholder" src="logos/tu-delft-flame.svg" alt="" draggable="false">
+              <div class="project-banner">
+                <div class="project-head">
+                  <h3>Project Two</h3>
+                  <time>2025</time>
+                </div>
+                <ul class="project-details">
+                  <li>What it does and why you built it.</li>
+                  <li>Tools and technologies used.</li>
+                  <li>Your role and the result.</li>
+                </ul>
+              </div>
+            </a>
+            <a class="project" href="projects/project-three.html">
+              <img class="project-cover placeholder" src="logos/tu-delft-flame.svg" alt="" draggable="false">
+              <div class="project-banner">
+                <div class="project-head">
+                  <h3>Project Three</h3>
+                  <time>2025</time>
+                </div>
+                <ul class="project-details">
+                  <li>What it does and why you built it.</li>
+                  <li>Tools and technologies used.</li>
+                  <li>Your role and the result.</li>
+                </ul>
+              </div>
+            </a>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    const main = document.querySelector('main');
+    const nav = document.querySelector('.topnav');
+    const tabs = [...nav.querySelectorAll('[role="tab"]')];
+    const indicator = nav.querySelector('.tab-indicator');
+    const slider = document.querySelector('.slider');
+    const panels = [...slider.querySelectorAll('.panel')];
+    const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)');
+    let current = 0; // index of the panel on screen
+
+    // Slider. --pos is the panel index in view (fractional while swiping); the CSS
+    // turns it into the slide. The tab underline is moved along with it.
+    function setPos(pos) {
+      slider.style.setProperty('--pos', pos);
+      const max = tabs.length - 1;
+      const p = Math.min(max, Math.max(0, pos));
+      const i = Math.floor(p), j = Math.min(i + 1, max), t = p - i;
+      const a = tabs[i], b = tabs[j];
+      indicator.style.setProperty('--ind-x', a.offsetLeft + (b.offsetLeft - a.offsetLeft) * t + 'px');
+      indicator.style.setProperty('--ind-w', a.offsetWidth + (b.offsetWidth - a.offsetWidth) * t);
+    }
+    // The slider is as tall as the panel on screen, so the page never scrolls into the other one
+    function fitHeight() { slider.style.height = panels[current].offsetHeight + 'px'; }
+
+    function show(index, { animate = true, focus = false } = {}) {
+      index = Math.max(0, Math.min(panels.length - 1, index));
+      const changed = index !== current;
+      current = index;
+      if (!animate) main.classList.add('no-anim');
+      setPos(index);
+      fitHeight();
+      if (!animate) { void main.offsetWidth; main.classList.remove('no-anim'); }
+      tabs.forEach((tab, i) => {
+        tab.classList.toggle('active', i === index);
+        tab.setAttribute('aria-selected', i === index);
+        tab.tabIndex = i === index ? 0 : -1;
+      });
+      panels.forEach((panel, i) => { panel.inert = i !== index; });
+      if (focus) tabs[index].focus();
+      if (changed) {
+        history.replaceState(null, '', '#' + panels[index].id);
+        // Scrolled down the old panel? Bring the top of the new one into view.
+        const top = slider.getBoundingClientRect().top + scrollY - nav.offsetHeight;
+        if (scrollY > top) scrollTo({ top, behavior: animate && !reduceMotion.matches ? 'smooth' : 'auto' });
+      }
+    }
+
+    // Panel holding the element a #hash points to (a panel itself or an entry inside one)
+    function panelOf(hash) {
+      const el = hash.length > 1 && document.getElementById(decodeURIComponent(hash.slice(1)));
+      return el ? panels.indexOf(el.closest('.panel')) : -1;
+    }
+
+    tabs.forEach((tab, i) => tab.addEventListener('click', e => { e.preventDefault(); show(i); }));
+    nav.addEventListener('keydown', e => {
+      const to = { ArrowLeft: current - 1, ArrowRight: current + 1, Home: 0, End: panels.length - 1 }[e.key];
+      if (to === undefined) return;
+      e.preventDefault();
+      show(to, { focus: true });
+    });
+    addEventListener('hashchange', () => { const i = panelOf(location.hash); if (i >= 0) show(i); });
+
+    // Swipe between panels on touch screens: the content follows the finger, then settles
+    let drag = null;
+    slider.addEventListener('pointerdown', e => {
+      if (e.pointerType === 'touch' && e.isPrimary)
+        drag = { x0: e.clientX, y0: e.clientY, x: e.clientX, t: e.timeStamp, v: 0, pos: current, active: false };
+    });
+    slider.addEventListener('pointermove', e => {
+      if (!drag) return;
+      const dx = e.clientX - drag.x0, dy = e.clientY - drag.y0;
+      if (!drag.active) {
+        if (Math.abs(dy) > Math.abs(dx)) { if (Math.abs(dy) > 10) drag = null; return; } // vertical: let the page scroll
+        if (Math.abs(dx) < 10) return;
+        drag.active = true;
+        slider.setPointerCapture(e.pointerId);
+        main.classList.add('no-anim');
+      }
+      const dt = e.timeStamp - drag.t;
+      if (dt > 0) drag.v = 0.8 * (e.clientX - drag.x) / dt + 0.2 * drag.v; // px per ms
+      drag.x = e.clientX;
+      drag.t = e.timeStamp;
+      const max = panels.length - 1;
+      let pos = current - dx / slider.clientWidth;
+      if (pos < 0) pos *= 0.3; else if (pos > max) pos = max + (pos - max) * 0.3; // resist past the ends
+      drag.pos = pos;
+      setPos(pos);
+    });
+    function endDrag(e) {
+      const d = drag;
+      drag = null;
+      if (!d || !d.active) return;
+      main.classList.remove('no-anim');
+      const moved = d.pos - current; // in panel widths, positive = towards the next panel
+      const v = e.timeStamp - d.t < 100 ? d.v : 0; // finger paused before lifting: no flick
+      let to = current;
+      if (e.type === 'pointerup') {
+        if (moved > 0.25 || (moved > 0 && v < -0.3)) to++;
+        else if (moved < -0.25 || (moved < 0 && v > 0.3)) to--;
+      }
+      show(to);
+    }
+    slider.addEventListener('pointerup', endDrag);
+    slider.addEventListener('pointercancel', endDrag);
+
+    // Keep the height and underline right when the layout changes (resizing, fonts loading)
+    const ro = new ResizeObserver(() => { setPos(drag?.active ? drag.pos : current); fitHeight(); });
+    panels.forEach(panel => ro.observe(panel));
+    ro.observe(nav);
+
+    show(Math.max(0, panelOf(location.hash)), { animate: false });
+
+    // Dark/light switch: remembers the choice; colours fade briefly while switching
+    const themeToggle = document.querySelector('.theme-toggle');
+    const root = document.documentElement;
+    const syncToggle = () => themeToggle.setAttribute('aria-checked', root.dataset.theme === 'dark');
+    themeToggle.addEventListener('click', () => {
+      root.classList.add('theme-anim');
+      root.dataset.theme = root.dataset.theme === 'dark' ? 'light' : 'dark';
+      try { localStorage.setItem('theme', root.dataset.theme); } catch (e) {}
+      syncToggle();
+      clearTimeout(themeToggle.t);
+      themeToggle.t = setTimeout(() => root.classList.remove('theme-anim'), 350);
+    });
+    syncToggle();
+  </script>
+</body>
+</html>
